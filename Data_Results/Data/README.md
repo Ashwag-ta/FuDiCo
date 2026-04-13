@@ -6,7 +6,7 @@ The data are organized into two categories: **raw datasets** and **processed dat
 ## 1. Processed Data (Used in FuDiCo)
 
 ## 2. Raw Data (Reference Only)
-Raw datasets used in this study are provided for reference, transparency, and reproducibility, and are stored in: data/raw/`.
+Raw datasets used in this study are provided for reference, transparency, and reproducibility, and are stored in: `data/raw/`.
 
 ### Included Raw Data Sources
 - Protein–protein Interaction (PPI) network  

@@ -14,6 +14,7 @@ Raw datasets used in this study are provided for reference, transparency, and re
 - Disease pair dataset
 - Fusion gene dataset (FusionGDB 2.0)  
 - Gene and protein sequence dataset
+- Gene and disease ID mapping files (used during preprocessing)
 
 ## Original Data Sources
 The raw data used in this study are obtained from the following publicly available sources:

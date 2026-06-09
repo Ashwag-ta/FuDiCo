@@ -1,0 +1,27 @@
+{
+    "FuDiCo_hyperparameters": {
+        "max_epochs": 20,
+ 	"monitor_metric" : "val_auroc",
+    	"max_path_length": 3,
+	"max_paths_per_cc": 100,
+	"used_path_lengths": [1,2,3],
+    	"beta": 0.5,
+	"gamma": 0.5,
+	"tau": 0.20,
+    	"path_hidden_dim": 128,
+    	"node_proj_dim": 128,
+    	"cc_hidden_dim": 64,
+    	"feature_dim": 32,
+    	"seed": 3,
+    	"init_node_dim": 1280,
+	"no_path_gate_init": -2.0,
+    	"freeze_node_embeds": false,
+    	"batch_size": 32,
+    	"cc_aggregator": "mean",
+    	"path_aggregator": "attn_softmax",
+    	"learning_rate": 0.0008032086022559239,
+    	"max_lr": 0.0014142497450264579,
+    	"weight_decay": 0.0002581438047829975,
+    	"grad_clip": 0.2564126676653474
+    }
+}

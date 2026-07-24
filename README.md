@@ -50,8 +50,6 @@ python train_FuDiCo.py -c FuDiCo_train_hyperparameters.json
 
 Before testing, download the model checkpoint file **[`FuDiCo_test_model.ckpt`](https://www.dropbox.com/scl/fi/8ean1oxaxx9texq8tvtir/FuDiCo_test_model.ckpt?rlkey=g7r8ppwdzq5qcffyeco6o0tgq&st=1mxz4ez7&dl=0)** and place it in `Data_Results/Results/Test_Resources/` alongside the testing hyperparameters file `FuDiCo_test_hyperparameters.json`.
 
-We provide these files to facilitate reproducibility of the reported results.
-
 Test FuDiCo using:
 
 ```bash

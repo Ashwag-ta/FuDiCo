@@ -8,7 +8,7 @@ Repository for **FuDiCo: Gene Fusion-Initiated Path Propagation for Disease Como
 
 Set the project root directory in `main_config.py`.
 
-This directory will be used to store all data files and generated results.
+This directory will be used to store all data files and results.
 
 ### 2. Install the Environment
 

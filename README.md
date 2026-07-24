@@ -1,6 +1,6 @@
 # FuDiCo
 
-Repository for **FuDiCo: Fusion-Diffusion Connected Components Network for Disease-Disease Relationship Prediction**.
+Repository for **FuDiCo: Gene Fusion-Initiated Path Propagation for Disease Comorbidity Prediction**.
 
 ## Before Running FuDiCo
 

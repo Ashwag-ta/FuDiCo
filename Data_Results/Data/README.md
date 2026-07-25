@@ -1,8 +1,8 @@
-# FuDiCo Data Description
+# FuDiCo Data 
 
 This directory contains the raw datasets used in FuDiCo. These datasets are provided for reference, transparency, and reproducibility and are stored in data/raw/.
 
-### Included Raw Data Sources
+### Included Raw Datasets
 - Protein–protein Interaction (PPI) network  
 - Disease–gene association dataset
 - Disease pair dataset
@@ -10,7 +10,7 @@ This directory contains the raw datasets used in FuDiCo. These datasets are prov
 - Gene and protein sequence dataset
 - Gene and disease ID mapping files (used during preprocessing)
 
-## Original Data Sources
+### Original Data Sources
 The raw data used in this study are obtained from the following publicly available sources:
 
 * Menche, J.; Sharma, A.; Kitsak, M.; Ghiassian, S.D.; Vidal, M.; Loscalzo, J.; Barabási, A.-L. Uncovering Disease-Disease Re-lationships through the Incomplete Interactome. Science 2015, 347, 1257601, doi:10.1126/science.1257601.

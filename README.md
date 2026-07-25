@@ -34,7 +34,7 @@ python precompute_graph_diffusion_and_paths.py
 
 ## Precomputed Data
 
-Download the `fusion_diffusion_data` folder **[`fusion_diffusion_data`](https://www.dropbox.com/scl/fo/yp4u8d3mhy0xbpww3fxan/AJtwx5iY2S_Ka_NSxuHXSBc?rlkey=qvf7aci6db1i73c07plrtdjd1&st=8o1u508d&dl=0)** and place it in `Data_Results/Data/`.
+Download the precomputed data folder **[`fusion_diffusion_data`](https://www.dropbox.com/scl/fo/yp4u8d3mhy0xbpww3fxan/AJtwx5iY2S_Ka_NSxuHXSBc?rlkey=qvf7aci6db1i73c07plrtdjd1&st=8o1u508d&dl=0)** and place it in `Data_Results/Data/`.
 The folder contains the precomputed diffusion operators, fusion-to-subgraph paths, diffusion reachability matrices, fusion gene sets, and fusion-to-connected-component paths required for both training and testing FuDiCo. If these files are present, FuDiCo will automatically load and reuse them instead of recomputing them.
 
 

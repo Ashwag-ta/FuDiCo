@@ -22,6 +22,7 @@ conda activate FuDiCo_env
 
 Download the processed data folder **[`processed_data`](https://www.dropbox.com/scl/fo/8umsd9el3lzhdg0gbmw4v/AHqV0zYwV1J1iSDTJdXUg04?rlkey=pnjknapnftl4tl6kybk69acfj&st=prze81jo&dl=0)** and place it in `Data_Results/Data/`
 
+
 ## Precompute Diffusion Operators and Fusion-to-Subgraph Paths
 
 Run the preprocessing script to generate diffusion operators and fusion-to-subgraph paths:
@@ -29,6 +30,7 @@ Run the preprocessing script to generate diffusion operators and fusion-to-subgr
 ```bash
 python precompute_graph_diffusion_and_paths.py
 ```
+
 
 ## Precomputed Data
 
@@ -38,6 +40,7 @@ Download the precomputed data folder **[`fusion_diffusion_data`](https://www.dro
 
 **Note:** The provided `fusion_diffusion_data` folder already contains the precomputed diffusion reachability matrices, fusion gene sets, and fusion-to-connected-component (CC) paths required for both training and testing FuDiCo. If these files are present, FuDiCo will automatically load and reuse them instead of recomputing them.
 
+
 ## Training FuDiCo
 
 Train FuDiCo using: 
@@ -45,6 +48,7 @@ Train FuDiCo using:
 ```bash
 python train_FuDiCo.py -c FuDiCo_train_hyperparameters.json
 ```
+
 
 ## Testing FuDiCo
 

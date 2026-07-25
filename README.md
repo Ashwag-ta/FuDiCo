@@ -31,7 +31,7 @@ The folder contains the precomputed diffusion operators, diffusion reachability 
 
 ## Precompute Diffusion Operators and Fusion-to-Subgraph Paths (Optional)
 
-If you prefer to generate the precomputed data, run:
+To generate the precomputed data, run:
 
 ```bash
 python precompute_graph_diffusion_and_paths.py

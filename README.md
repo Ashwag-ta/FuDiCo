@@ -20,7 +20,7 @@ conda activate FuDiCo_env
 ```
 ### 3. Download the Processed Data
 
-Download the processed data folder **[`processed_data`](https://www.dropbox.com/scl/fo/8umsd9el3lzhdg0gbmw4v/AHqV0zYwV1J1iSDTJdXUg04?rlkey=pnjknapnftl4tl6kybk69acfj&st=prze81jo&dl=0)** and place it in `Data_Results/Data/`
+Download the processed data folder **[`processed_data`](https://www.dropbox.com/scl/fo/8umsd9el3lzhdg0gbmw4v/AHqV0zYwV1J1iSDTJdXUg04?rlkey=pnjknapnftl4tl6kybk69acfj&st=prze81jo&dl=0)** and place it in `Data_Results/Data/`.
 
 
 ## Precomputed Data (Recommended)

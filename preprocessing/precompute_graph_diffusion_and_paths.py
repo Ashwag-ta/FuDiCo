@@ -114,15 +114,15 @@ def precompute_graph_diffusion_and_paths(PPI_graph, PPI_node_ids, fusion_node_id
 def main():
     
     # Load the full PPI graph
-    PPI_graph = nx.relabel_nodes(nx.read_edgelist(str(config.DATA_RESULTS_DIR / "Data" / "PPI.txt")), int)
+    PPI_graph = nx.relabel_nodes(nx.read_edgelist(str(config.DATA_RESULTS_DIR / "Data" / "processed_data" / "PPI.txt")), int)
     PPI_node_ids = sorted(PPI_graph.nodes())
  
     # Load fusion gene pairs as a graph and extract fusion-associated genes
-    fusion_graph = nx.relabel_nodes(nx.read_edgelist(str(config.DATA_RESULTS_DIR / "Data" / "fusion_gene_pairs.txt")), int)
+    fusion_graph = nx.relabel_nodes(nx.read_edgelist(str(config.DATA_RESULTS_DIR / "Data" / "processed_data" / "fusion_gene_pairs.txt")), int)
     fusion_node_ids = sorted(fusion_graph.nodes())
 
     # Load disease-associated genes for each subgraph 
-    subgraphs_file = config.DATA_RESULTS_DIR / "Data" / "disease_subgraphs.pth"
+    subgraphs_file = config.DATA_RESULTS_DIR / "Data" / "processed_data" / "disease_subgraphs.pth"
     all_subgraphs = []
     with open(subgraphs_file) as sub_f:
         for idx, line in enumerate(sub_f):

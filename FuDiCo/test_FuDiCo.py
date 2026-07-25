@@ -272,7 +272,7 @@ def main():
     test_config["subgraphs_path"] = os.path.join(base_data_path, "disease_subgraphs.pth")
     test_config["node_embeddings_path"] = os.path.join(base_data_path, "ESM-2_gene_embeddings.pth")
     test_config["fusion_pairs_path"] = os.path.join(base_data_path, "fusion_gene_pairs.txt")
-    test_config["fusion_diffusion_data_path"] = os.path.join(base_data_path, "fusion_diffusion_data")
+    test_config["fusion_diffusion_data_path"] = os.path.join(config.PROJECT_ROOT, "Data", "fusion_diffusion_data")
 
     # Run the model testing
     test_fudico_model(hyperparameters, model_path, test_config, test_results_path)   

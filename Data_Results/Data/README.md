@@ -1,12 +1,6 @@
 # FuDiCo Data Description
 
-This directory contains the datasets used in **FuDiCo**.  
-The data are organized into two categories: **raw datasets** and **processed datasets**.
----
-## 1. Processed Data (Used in FuDiCo)
-
-## 2. Raw Data (Reference Only)
-Raw datasets used in this study are provided for reference, transparency, and reproducibility, and are stored in: `data/raw/`.
+This directory contains the raw datasets used in FuDiCo. These datasets are provided for reference, transparency, and reproducibility and are stored in data/raw/.
 
 ### Included Raw Data Sources
 - Protein–protein Interaction (PPI) network  

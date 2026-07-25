@@ -213,7 +213,7 @@ def main():
     train_config["subgraphs_path"] = os.path.join(base_data_path, "disease_subgraphs.pth")
     train_config["node_embeddings_path"] = os.path.join(base_data_path, "ESM-2_gene_embeddings.pth")
     train_config["fusion_pairs_path"] = os.path.join(base_data_path, "fusion_gene_pairs.txt")
-    train_config["fusion_diffusion_data_path"] = os.path.join(base_data_path, "fusion_diffusion_data")
+    train_config["fusion_diffusion_data_path"] = os.path.join(config.PROJECT_ROOT, "Data", "fusion_diffusion_data")
 
     train_fudico_model(train_config)
 

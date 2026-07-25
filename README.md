@@ -23,7 +23,7 @@ conda activate FuDiCo_env
 Download the processed data folder **[`processed_data`](https://www.dropbox.com/scl/fo/8umsd9el3lzhdg0gbmw4v/AHqV0zYwV1J1iSDTJdXUg04?rlkey=pnjknapnftl4tl6kybk69acfj&st=prze81jo&dl=0)** and place it in `Data_Results/Data/`.
 
 
-## Precomputed Data (Recommended)
+## Precomputed FuDiCo Data (Recommended)
 
 Download the precomputed data folder **[`fusion_diffusion_data`](https://www.dropbox.com/scl/fo/yp4u8d3mhy0xbpww3fxan/AJtwx5iY2S_Ka_NSxuHXSBc?rlkey=qvf7aci6db1i73c07plrtdjd1&st=8o1u508d&dl=0)** and place it in `Data_Results/Data/`.
 The folder contains the precomputed diffusion operators, diffusion reachability matrices, fusion gene sets, fusion-to-subgraph paths, and fusion-to-connected-component paths required for both training and testing FuDiCo. If these files are present, FuDiCo will automatically load and reuse them instead of recomputing them.

@@ -57,3 +57,16 @@ Test FuDiCo using:
 python test_FuDiCo.py --model_file FuDiCo_test_model.ckpt --test_config_file FuDiCo_test_hyperparameters.json
 ```
 
+
+## How to Cite
+
+```bibtex
+@Article{cimb48060622,
+  author  = {Altayyar, Ashwag and Liao, Li},
+  title   = {FuDiCo: Gene Fusion-Initiated Path Propagation for Disease Comorbidity Prediction},
+  journal = {Current Issues in Molecular Biology},
+  volume  = {48},
+  year    = {2026},
+  doi     = {10.3390/cimb48060622}
+}
+```

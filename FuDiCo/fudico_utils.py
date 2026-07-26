@@ -6,11 +6,6 @@ from sklearn.metrics import accuracy_score, f1_score, average_precision_score
 
 # PyTorch and PyTorch Geometric Imports
 import torch
-from torch_geometric.data import Data
-from torch_geometric.transforms import RandomLinkSplit
-
-# Networkx Import
-import networkx as nx
 
 
 
@@ -34,45 +29,6 @@ def process_disease_pairs(pos_pairs, neg_pairs, sample_fraction):
     disease_pair_labels = disease_pair_labels[perm]
     
     return disease_pairs, disease_pair_labels
-    
-
-def read_disease_pairs(subgraphs_file, disease_pair_file, train_ratio=0.8, val_ratio=0.10, test_ratio=0.10):  
-    """
-    Read disease pairs and split them into train, validation, and test sets.
-    """
-
-    # Build disease-pair graph
-    disease_pair_graph = nx.Graph()
-    with open(subgraphs_file) as sub_f:
-        for line in sub_f:
-            subgraph_idx = int(line.split("\t")[1].strip())
-            disease_pair_graph.add_node(subgraph_idx)
-    disease_pair_graph.add_edges_from(nx.read_edgelist(disease_pair_file, nodetype=int).edges())
-
-    # Convert graph to a PyTorch Geometric Data object
-    edge_index = torch.tensor(list(disease_pair_graph.edges()), dtype=torch.long).t().contiguous()
-    num_nodes = disease_pair_graph.number_of_nodes()
-    edge_label = torch.ones(edge_index.size(1), dtype=torch.long)  
-    data = Data(edge_index=edge_index, num_nodes=num_nodes, edge_label=edge_label)
-
-    # Split positive and negative pairs
-    transform = RandomLinkSplit(is_undirected=True, split_labels=True, num_val=val_ratio, num_test=test_ratio)
-    train_data, val_data, test_data = transform(data)
-
-    train_pos_pairs = train_data.pos_edge_label_index.t()
-    train_neg_pairs = train_data.neg_edge_label_index.t()
-    val_pos_pairs = val_data.pos_edge_label_index.t()
-    val_neg_pairs = val_data.neg_edge_label_index.t()
-    test_pos_pairs = test_data.pos_edge_label_index.t()
-    test_neg_pairs = test_data.neg_edge_label_index.t()
-
-    train_disease_pairs, train_disease_pair_labels = process_disease_pairs(train_pos_pairs, train_neg_pairs, sample_fraction=0.25)
-    val_disease_pairs, val_disease_pair_labels = process_disease_pairs(val_pos_pairs, val_neg_pairs, sample_fraction=0.25)
-    test_disease_pairs, test_disease_pair_labels = process_disease_pairs(test_pos_pairs, test_neg_pairs, sample_fraction=0.25)
-
-    return (train_disease_pairs, train_disease_pair_labels,
-            val_disease_pairs, val_disease_pair_labels,
-            test_disease_pairs, test_disease_pair_labels)
    
 
 def assign_subgraphs_to_splits(subgraphs_file):

@@ -11,7 +11,7 @@ This directory contains the raw datasets used in FuDiCo. These datasets are prov
 - Gene and disease ID mapping files (used during preprocessing)
 
 ### Original Data Sources
-The datasets used in this study are obtained from the following publicly available sources:
+The datasets used in this study were obtained from the following publicly available sources:
 
 * Menche, J.; Sharma, A.; Kitsak, M.; Ghiassian, S.D.; Vidal, M.; Loscalzo, J.; Barabási, A.-L. Uncovering Disease-Disease Re-lationships through the Incomplete Interactome. Science 2015, 347, 1257601, doi:10.1126/science.1257601.
 

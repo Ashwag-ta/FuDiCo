@@ -4,32 +4,7 @@ import sys
 # Sci-kit Learn Import 
 from sklearn.metrics import accuracy_score, f1_score, average_precision_score
 
-# PyTorch and PyTorch Geometric Imports
-import torch
 
-
-
-def process_disease_pairs(pos_pairs, neg_pairs, sample_fraction):
-    """
-    Sample negative disease pairs and combine with positive disease pairs.
-    """
-  
-    # Sample negative pairs
-    num_neg_samples = int(neg_pairs.size(0) * sample_fraction)
-    sampled_neg_pairs = neg_pairs[torch.randperm(neg_pairs.size(0))[:num_neg_samples]]
-  
-    # Combine pairs and create labels
-    disease_pairs = torch.cat([pos_pairs, sampled_neg_pairs], dim=0).t()
-    disease_pair_labels = torch.cat([
-        torch.ones(pos_pairs.size(0), dtype=torch.long),  
-        torch.zeros(sampled_neg_pairs.size(0), dtype=torch.long)], dim=0)
-
-    perm = torch.randperm(disease_pairs.size(1))  
-    disease_pairs = disease_pairs[:, perm]
-    disease_pair_labels = disease_pair_labels[perm]
-    
-    return disease_pairs, disease_pair_labels
-   
 
 def assign_subgraphs_to_splits(subgraphs_file):
     """

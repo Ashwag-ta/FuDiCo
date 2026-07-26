@@ -1,8 +1,8 @@
-# FuDiCo Data 
+# FuDiCo Raw Datasets
 
 This directory contains the raw datasets used in FuDiCo. These datasets are provided for reference, transparency, and reproducibility.
 
-### Included Raw Datasets
+### Included Datasets
 - Protein–protein Interaction (PPI) network  
 - Disease–gene association dataset
 - Disease pair dataset

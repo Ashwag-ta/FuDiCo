@@ -2,7 +2,7 @@
 import os
 import sys
 from collections import OrderedDict 
-import random
+import random 
 import argparse
 import commentjson
 import numpy as np

@@ -3,7 +3,7 @@
 This directory contains the raw datasets used in FuDiCo. These datasets are provided for reference, transparency, and reproducibility.
 
 ### Included Datasets
-- Protein–protein Interaction (PPI) network  
+- Protein–protein interaction (PPI) network  
 - Disease–gene association dataset
 - Disease pair dataset
 - Fusion gene dataset (FusionGDB 2.0)  
